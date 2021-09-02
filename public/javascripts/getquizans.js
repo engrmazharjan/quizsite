@@ -92,7 +92,8 @@ jsondata.forEach((ele) => {
       sessionStorage.setItem("myscore", score);
 
       // Fetching privious score .
-      let urls = "http://localhost:3000/score";
+      // http://localhost:3000
+      let urls = "/score";
 
       let params = {
         method: "GET",
@@ -114,8 +115,8 @@ jsondata.forEach((ele) => {
           console.log("updated Allover score", alloverscore);
 
           // updating score (serverside database)
-
-          let url = "http://localhost:3000/score";
+          //http://localhost:3000
+          let url = "/score";
 
           let data = {
             score: alloverscore,

@@ -8,7 +8,8 @@ document.getElementById("ssignup").addEventListener("click", (e) => {
   // console.log("signup clicked")
   e.preventDefault();
   checkInputs();
-  let url = "http://localhost:3000/users/signup";
+  // http://localhost:3000
+  let url = "/users/signup";
 
   let data = {
     username: susername.value,

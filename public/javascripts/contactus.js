@@ -4,7 +4,7 @@ let country = document.getElementById("country");
 let subject = document.getElementById("subject");
 
 document.getElementById("consub").addEventListener("click", (e) => {
-  let urls = "http://localhost:3000/contactus";
+  let urls = "/contactus";
 
   let datas = {
     name: name.value,
