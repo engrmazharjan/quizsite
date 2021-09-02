@@ -3,8 +3,8 @@ let lpassword = document.getElementById("lpassword");
 
 document.getElementById("llogin").addEventListener("click", (e) => {
   // console.log("login clicked")
-  // http://localhost:3000
-  let url = "/users/login";
+
+  let url = "http://localhost:3000/users/login";
 
   let data = {
     username: lusername.value,

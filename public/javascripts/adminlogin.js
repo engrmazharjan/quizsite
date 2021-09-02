@@ -4,7 +4,7 @@ let apassword = document.getElementById("apassword");
 document.getElementById("alogin").addEventListener("click", (e) => {
   // console.log("alogin clicked")
   e.preventDefault();
-  let url = "/adminlogin/login";
+  let url = "http://localhost:3000/adminlogin/login";
 
   let data = {
     username: ausername.value,

@@ -1,6 +1,6 @@
 let token = localStorage.getItem("token");
 
-let url = "/addquiz";
+let url = "http://localhost:3000/addquiz";
 
 let params = {
   method: "GET",

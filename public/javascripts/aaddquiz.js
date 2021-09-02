@@ -9,9 +9,9 @@ let curans = document.getElementById("curans");
 
 let quizname = sessionStorage.getItem("quizname");
 console.log(quizname);
-// http://localhost:3000
+
 document.getElementById("addqus").addEventListener("click", (e) => {
-  let urls = "/addquiz";
+  let urls = "http://localhost:3000/addquiz";
   e.preventDefault();
   let datas = {
     quizname: quizname,

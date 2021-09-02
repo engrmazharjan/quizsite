@@ -1,5 +1,5 @@
 let token = localStorage.getItem("token");
-let url = "/users";
+let url = "http://localhost:3000/users";
 
 let params = {
   method: "GET",
