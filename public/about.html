@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font CDN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap"
+    />
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/about.css" />
+    <link rel="stylesheet" href="./stylesheets/zoom.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand font-weight-bold text-warning zoom" href="dash.html"
+        >Quiz App</a
+      >
+      <button
+        class="navbar-toggler collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link zoom fontSize" href="dash.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link zoom fontSize" href="ranking.html">Ranking<span class="sr-only">(current)</span></a>
+          </li>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active zoom fontSize" href="about.html">About<span class="sr-only">(current)</span></a>
+          </li>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link zoom fontSize" href="contactus.html">Contact<span class="sr-only">(current)</span></a>
+          </li>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn-outline-warning mx-2 zoom" id="userlogout">
+          Logout
+        </button>
+
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- About Start -->
+    <div class="jumbotron jumbotron-fluid backcolor mt-3 navposition aboutBackground">
+        <div class="container text-center bg-dark text-light">
+            <h1 class="mb-3">About Us</h1>
+            <p class="lead">In the new tech-driven world, where everything is a click away, 
+                everyone can learn and study without trouble. Along with dedication, 
+                some smart strategies can enhance your exam preparations. 
+                Mobile applications are one of the easiest ways to simplify and improve the exam preparation process. 
+                Exam Preparation App is a trending app idea that helps students and teachers as well.
+            </p>
+        </div>
+    </div>
+    <h1 class="text-center my-1 backcolor">Our Team</h1>
+
+    <div class="container backcolor teamBackground">
+        <div class="row justify-content-center">
+            <div class="col-md-4 w-auto my-3">
+                <div class="card shadow cardcolor" style="width: 20rem;">
+                    <div class="inner">
+                        <img class="card-img-top" src="./images/mazhar.jpg" height="215" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Mazhar Jan</h4>
+                        <p class="card-title">CEO & Founder</p>
+                        <button id="conbtn1" type="button" class="btn btn-primary btn-lg btn-block">Contact</button>
+                        <div id="showmynum1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 w-auto my-3">
+                <div class="card shadow cardcolor" style="width: 20rem;">
+                    <div class="inner">
+                        <img class="card-img-top" src="./images/adnan.jpg" height="215" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Adnan Sami</h4>
+                        <p class="card-title">Designer</p>
+                        <button id="conbtn2" type="button" class="btn btn-primary btn-lg btn-block">Contact</button>
+                        <div id="showmynum2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 w-auto my-3">
+                <div class="card shadow cardcolor" style="width: 20rem;">
+                    <div class="inner">
+                        <img class="card-img-top" src="./images/mazhar.jpg" height="215" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Hamza Khattak</h4>
+                        <p class="card-title">Content Writer</p>
+                        <button id="conbtn3" type="button" class="btn btn-primary btn-lg btn-block">Contact</button>
+                        <div id="showmynum3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- CDN JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6987e708e7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Page JavaScript -->
+    <script src="./javascripts/mycontact.js"></script>
+    <script src="./javascripts/logout.js"></script>
+  </body>
+</html>

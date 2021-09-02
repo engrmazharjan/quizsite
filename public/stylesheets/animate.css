@@ -1,0 +1,63 @@
+/* Result Animation */
+.animate {
+  animation: colorchanger 4s infinite;
+  color: green;
+}
+
+@keyframes colorchanger {
+  0% {
+    background-image: linear-gradient(to right, orange, green);
+    color: black;
+  }
+
+  20% {
+    background-image: linear-gradient(to right, pink, yellow);
+    color: black;
+  }
+
+  60% {
+    background-image: linear-gradient(to right, red, blue);
+    color: white;
+  }
+
+  80% {
+    background-image: linear-gradient(to right, indigo, yellow);
+    color: white;
+  }
+
+  100% {
+    background-image: linear-gradient(to right, red, blue);
+    color: white;
+  }
+}
+
+.scal {
+  animation: textscal 3s infinite;
+}
+
+@keyframes textscal {
+  0% {
+    text-transform: scale(1);
+    font-size: 50px;
+  }
+
+  20% {
+    text-transform: scale(0.75);
+  }
+
+  40% {
+    text-transform: scale(1);
+  }
+
+  60% {
+    text-transform: scale(0.75);
+  }
+
+  80% {
+    text-transform: scale(0.75);
+  }
+
+  100% {
+    text-transform: scale(1);
+  }
+}

@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<head>
+	<!-- FontAwesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+	<!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+
+	<title>Quiz Name And Total Questions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- bootstrap-css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<!-- //bootstrap-css -->
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="css/style-responsive.css" rel="stylesheet"/>
+	<!-- font CSS -->
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<!-- font-awesome icons -->
+	<link rel="stylesheet" href="css/font.css" type="text/css"/>
+	<link href="css/font-awesome.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/morris.css" type="text/css"/>
+	<!-- //font-awesome icons -->
+	<script src="js/jquery2.0.3.min.js"></script>
+	<script src="js/raphael-min.js"></script>
+	<script src="js/morris.js"></script>
+</head>
+<body>
+	<section id="container">
+		<!--Header Start-->
+		<header class="header fixed-top clearfix">
+			<!--Logo Start-->
+			<div class="brand">
+				<a href="adminpannel.html" class="logo">
+					Quiz App
+				</a>
+				<div class="sidebar-toggle-box">
+					<div class="fa fa-bars"></div>
+				</div>
+			</div>
+			<!--Logo End-->
+
+			<div class="top-nav clearfix">
+				<!--Search & User Info Start-->
+				<ul class="nav pull-right top-menu">
+					<!-- User Login Dropdown Start-->
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<img alt="" src="images/mazhar.jpg">
+							<span class="username">Mazhar Jan</span>
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu extended logout">
+							<li><a href="admin.html" id="userlogout"><i class="fa fa-key"></i> Log Out</a></li>
+						</ul>
+					</li>
+					<!-- User Login Dropdown End -->
+				</ul>
+				<!--Search & User Info End-->
+			</div>
+		</header>
+		<!--Header End-->
+
+		<!--Sidebar Start-->
+		<aside>
+			<div id="sidebar" class="nav-collapse">
+				<!-- Sidebar Menu Start-->
+				<div class="leftside-navigation">
+					<ul class="sidebar-menu" id="nav-accordion">
+						<li>
+							<a class="active" href="adminpannel.html">
+								<i class="fa fa-dashboard"></i>
+								<span>Dashboard</span>
+							</a>
+						</li>
+						
+						<li class="sub-menu">
+							<a href="aquznameandtotalqus.html">
+								<i class="fa fa-question"></i>
+								<span>Add Quiz</span>
+							</a>
+						</li>
+
+						<li class="sub-menu">
+							<a href="auser.html">
+								<i class="fa fa-users"></i>
+								<span>Users</span>
+							</a>
+						</li>
+
+						<li class="sub-menu">
+							<a href="aranking.html">
+								<i class="fa fa-trophy"></i>
+								<span>LeaderBoard</span>
+							</a>
+						</li>
+
+						<li class="sub-menu">
+							<a href="afeedback.html">
+								<i class="fa fa-envelope"></i>
+								<span>FeedBack </span>
+							</a>
+						</li>
+					
+						<li>
+							<a href="admin.html">
+								<i class="fa fa-user"></i>
+								<span id="userlogout">Logout</span>
+							</a>
+						</li>
+					</ul>            
+				</div>
+				<!-- Sidebar Menu End-->
+			</div>
+		</aside>
+		<!--Sidebar End-->
+
+		
+
+		<!--Main Content Start-->
+		<section id="main-content">
+			
+			<section class="wrapper">
+				<!-- Button Start -->
+				<!-- Button Trigger Modal -->
+				<div class="container navposition">
+					<button
+						type="button"
+						class="btn btn-danger btn-block btn-lg my-4 zoom"
+						data-toggle="modal"
+						data-target="#startnow"
+					>
+						Read Quiz Instructions
+					</button>
+				</div>
+		
+				<!-- Modal Start -->
+				<div
+				class="modal fade"
+				id="startnow"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="exampleModalLongTitle"
+				aria-hidden="true"
+				>
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">
+						Read Instruction
+						</h5>
+						<button
+						type="button"
+						class="close"
+						data-dismiss="modal"
+						aria-label="Close"
+						>
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>
+						Steps For Accessing Your Exam Online: <br />
+						Close all programs, including email <br />
+						Click on the Click here to open the exam link provided in the
+						email from The College. <br />
+						Click "Log In For Your Exam Here" at the bottom of the screen.
+						<br />
+						Have your Proctor enter the Username and Password provided in the
+						email from The College and click enter. <br />
+						To begin the exam, click on the link to the appropriate exam
+						listed under Online Assessments. <br />
+			
+						Before starting the exam: <br />
+			
+						Please verify that the student's last name appears correctly
+						within the User ID box. <br />
+			
+						During the exam: <br />
+			
+						The student may not use his or her textbook, course notes, or
+						receive help from a proctor or any other outside source. <br />
+						Students must complete the 50-question multiple-choice exam within
+						the 75-minute time frame allotted for the exam. <br />
+						Students must not stop the session and then return to it. This is
+						especially important in the online environment where the system
+						will "time-out" and not allow the student or you to reenter the
+						exam site.<br />
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button
+						type="button"
+						class="btn btn-secondary"
+						data-dismiss="modal"
+						>
+						Close
+						</button>
+					</div>
+					</div>
+				</div>
+				</div>
+				<!-- Modal End -->
+				<!-- Button End  -->
+				<div class="market-updates">
+					<a href="auser.html">
+						<div class="col-md-4 market-update-gd">
+							<div class="market-update-block clr-block-1">
+								<div class="col-md-4 market-update-right">
+									<i class="fas fa-users fa-3x"></i>
+								</div>
+								<div class="col-md-8 market-update-left">
+									<h3>Users</h3>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</a>
+
+					<a href="aranking.html">
+						<div class="col-md-4 market-update-gd">
+							<div class="market-update-block clr-block-3">
+								<div class="col-md-4 market-update-right">
+									<i class="fas fa-trophy fa-3x"></i>
+								</div>
+								<div class="col-md-8 market-update-left">
+									<h3>LeaderBoard</h3>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</a>
+
+					<a href="afeedback.html">
+						<div class="col-md-4 market-update-gd">
+							<div class="market-update-block clr-block-4">
+								<div class="col-md-4 market-update-right">
+									<i class="fas fa-envelope fa-3x"></i>
+								</div>
+								<div class="col-md-8 market-update-left">
+									<h3>FeedBack</h3>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</a>
+					<div class="clearfix"></div>
+				</div>	
+
+				<div class="container backcolor navposition rounded py-3">
+					<div>
+						<h1 class="text-center mb-5 mt-2" style="font-style: italic; font-family: 'Courier New', Courier, monospace;">Quiz Name And Total Questions</h1>
+					</div>
+					<hr>
+					<form class="font-weight-bold">
+						<div class="form-group my-5">
+							<label for="exampleInputEmail1" class="fontSize" style="font-family: Verdana, Geneva, Tahoma, sans-serif; 
+							font-size: 18px; font-weight: bold;">Quiz Name:</label>
+							<input type="text" id="quizname" class="form-control col-xs-2" style="height: 50px; margin-top: 5px;" placeholder="Enter Your Quiz Name">
+						</div>
+			
+						<div class="form-group my-5">
+							<label for="exampleInputPassword1" class="fontSize" style="font-family: Verdana, Geneva, Tahoma, sans-serif; 
+							font-size: 18px; font-weight: bold; margin-top: 15px;">Total Questions:</label>
+							<input type="number" id="totalqustion" class="form-control col-xs-2" style="height: 50px; margin-top: 5px;" placeholder="Enter Total Number Of Questions">
+						</div>
+			
+						<div class="form-group font-weight-bold zoom">
+							<div class="row">
+								<div class="col text-center">
+									<button id="nextbtn" class="btn btn-lg btn-success mt-5">Next</button>
+								</div>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</section>
+
+			<!-- Footer Start -->
+			<div class="footer">
+				<div class="wthree-copyright">
+					<p>&copy; 2021 Quiz App. All rights reserved | Design by <em style="color: green; font-size: 20px;">Logic Worms</em></p>
+				</div>
+			</div>
+			<!-- Footer End -->
+
+		</section>
+		<!--Main Content End-->
+	</section>
+
+	<!-- Scripts -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.dcjqaccordion.2.7.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
+	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
+	<script src="js/jquery.scrollTo.js"></script>
+
+	<!-- Page JavaScript -->
+    <script src="./javascripts/aquznameandtotalqus.js"></script>
+    <script src="./javascripts/logout.js"></script>
+</body>
+</html>

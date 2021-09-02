@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dash</title>
+
+    <!-- CDN Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./stylesheets/zoom.css" />
+
+    <!-- Inline Style -->
+    <style>
+      td,
+      th {
+        padding: 1rem;
+        text-align: center;
+      }
+
+      #outline {
+        border-radius: 10px;
+      }
+
+      .fontSize {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      #dashbackground {
+        background-color: rgb(251, 249, 249) !important;
+      }
+    </style>
+  </head>
+  <body id="dashbackground">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand font-weight-bold text-warning zoom" href="dash.html">Quiz App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active zoom fontSize" href="dash.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            </li>
+          </ul>
+  
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link zoom fontSize" href="ranking.html">Ranking<span class="sr-only">(current)</span></a>
+            </li>
+            </li>
+          </ul>
+  
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link zoom fontSize" href="about.html">About<span class="sr-only">(current)</span></a>
+            </li>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link zoom fontSize" href="contactus.html">Contact<span class="sr-only">(current)</span></a>
+            </li>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-outline-warning mx-2 zoom" id="userlogout">
+            Logout
+          </button>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Start Button  -->
+    <!-- Button trigger modal -->
+    <div class="container navposition">
+        <button type="button" class="btn btn-danger btn-block btn-lg my-4 zoom mt-5" data-toggle="modal" data-target="#startnow">
+          Read Instruction
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="startnow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Read Instruction</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <pre>Steps For Accessing Your Exam Online:-
+              Close all programs, including email
+              Click on the START button to open the exam.
+
+              Before starting the exam:-
+              Please verify that you have stable internet connectivity.
+
+              During the exam:-
+              The student may not use his or her textbook, course notes, or receive help from any other
+              outside source.
+              Students must complete all multiple-choice question within the given time frame allotted for the
+              exam.
+              Students must not stop the session and then return to it. This is especially important in the online
+              environment where the system will "time-out" and not allow the student or you to reenter the exam site.
+            </pre>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Button -->
+
+    <!-- Quiz Table Start -->
+    <div id="quiztable"></div>
+    <!-- Quiz Table End -->
+
+    <!-- Start Card -->
+    <div class="card-deck my-2 mx-3">
+        <div class="card">
+          <img class="card-img-top" src="./images/back.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Evaluating a candidate deeper than its resume: </h5>
+            <p class="card-text">This online Quiz App help in evaluating the candidate beyond from its resume. Candidates
+              write so much extra things on their resume which they sometimes even don’t know about. These online Quiz App
+              helps in assessing all the abilities or the skills of the candidate in relation to the job position. You can
+              even recruit the best candidate among all..</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top w-50 mx-auto my-3" src="./images/comsvg.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Access to beyond boundary candidates:</h5>
+            <p class="card-text">Conducting offline Quiz tests limits the scope of the candidates. Not everyone who is
+              capable can take this test. It is not possible for people who reside far away to take the test in the
+              organization. But online Quiz App allows almost every capable and qualified person to take test via
+              internet. It provides more options to the recruiter to select from.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Card -->
+
+
+    <!-- CDN JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Page JavaScript -->
+    <script src="./javascripts/displayquiz.js"></script>
+    <script src="./javascripts/logout.js"></script>
+  </body>
+</html>

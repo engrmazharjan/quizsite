@@ -1,0 +1,59 @@
+/* Responsive Form */
+* {
+  box-sizing: border-box;
+}
+
+/* Style Inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style The Container/Contact Section */
+.container {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Create Two Columns That Float Next To Each Other */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* Clear Floats After The Columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive Layout - When The Screen Is Less Than 600px Wide, Make The Two Columns Stack On Top Of Each Other Instead Of Next To Each Other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

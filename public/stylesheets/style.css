@@ -1,0 +1,41 @@
+/* Scrolling Effect */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+/* Navbar Links Height */
+.fontSize {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.infoBackground,
+.aboutBackground,
+.teamBackground,
+.contactBackground {
+  background-color: rgb(251, 249, 249) !important;
+}
+
+.feedbackbutton {
+  color: #fff;
+}
+
+.carousel {
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.tales {
+  width: 100%;
+  max-height: 600px !important;
+}
